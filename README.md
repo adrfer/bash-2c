@@ -22,7 +22,7 @@ So, here are my 20 cents:
 - Use `mktemp` to create temporary files and always cleanup after with a `trap`
 - Use `>/dev/null 2>&1` to mute command outputs and tell users what went wrong in a more friendly way
 - Skip test for output `[[ ... ]]` in if-expressions if test for exit code is required
-- When using iteration, set the Internal Field Separator `IFS=$'\n\t'`, and `unset IFS` afterwards
+- Prior to iterating over a sequence, set the `IFS=$'\n\t'`, and `unset IFS` afterwards
 - Avoid [obsolete and deprecated syntax](http://wiki.bash-hackers.org/scripting/obsolete)
 
 --
