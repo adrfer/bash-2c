@@ -16,7 +16,7 @@ So, here are my 20 cents:
 - Wrap variables and parameter expansions in curly braces `{` and `}`
 - Use `"double quotes"` for arguments that contains expansions such as `"${variable}"` or `"$(command)"`
 - Use `'single quotes'` for everything else and when to make sure that everything in quotes remains literal
-- Use builtin parameter expansions rather than external functions
+- Use [builtin parameter expansions](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) rather than external functions
 - Use lowercase for variable names unless exported to the environment
 - Use uppercase for environment variables
 - Use `mktemp` to create temporary files and always cleanup after with a `trap`
