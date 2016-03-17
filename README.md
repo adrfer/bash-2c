@@ -5,7 +5,7 @@ Ideas tested in `GNU bash 3.2.57`.
 
 --
 
-So, here are my 20 cents:
+So, here are my 2 cents:
 
 - Use the `#!/usr/bin/env bash` hashbang as the first line of the script
 - Use `chmod +x` to make a script executable
