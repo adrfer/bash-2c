@@ -27,4 +27,4 @@ So, here are my 2 cents:
 - Avoid [obsolete and deprecated syntax](http://wiki.bash-hackers.org/scripting/obsolete)
 
 --
-Hey, looking for some bash badassery? Check [bash-oh-my](https://github.com/adrfer/bash-oh-my).
+Hey, looking for some bash badassery? Check out [bash-oh-my](https://github.com/adrfer/bash-oh-my).
