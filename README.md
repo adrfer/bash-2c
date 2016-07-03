@@ -14,7 +14,7 @@ So, here are my 2 cents:
 - Check if a file and/or a directory exists before accessing it
 - Provide a usage description in case users need help or misuse the script
 - Wrap variables and parameter expansions in curly braces `{` and `}`
-- Use `"double quotes"` for arguments that contains expansions such as `"${variable}"` or `"$(command)"`
+- Use `"double quotes"` for arguments that contain expansions such as `"${variable}"` or `"$(command)"`
 - Use `'single quotes'` for everything else and when to make sure that everything in quotes remains literal
 - Use [builtin parameter expansions](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) rather than external functions
 - Use lowercase for variable names unless exported to the environment
