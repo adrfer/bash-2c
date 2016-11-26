@@ -5,7 +5,26 @@ Ideas tested in `GNU bash 3.2.57`.
 
 --
 
-So, here are my 2 cents:
+## History
+
+#### Command Recall
+- `!!`: Recall the last command (e.g. !! or sudo !!)
+- `!n`: Recall the nth command (e.g. !7 or !234)
+- `!string`: Recall the most recent command starting with _string_ (e.g. !cd)
+- `!?string`: Recall the most recent command containing _string_ (e.g. !?git)
+- `^string1^string2`: Replace the first occurrence of _string1_ with _string2_ on last command (e.g. cat /etc/hosst, ^hosst^hosts)
+
+#### Argument Recall
+- `:^`: Get the first argument of a command (e.g. ls !cp:^ or ls !!:^)
+- `:$`: Get the last argument of a command (e.g. ls !cp:$ or ls !!:$)
+- `:n`: Get the nth argument of a command (e.g. ls !cp:2 or ls !!:2)
+- `:\*`: Get all arguments of a command (e.g. ls !cp:\* or ls !!:\*)
+
+#### Search and Replace
+- `/string` or `Ctrl-r`: Search history backward for a command matching _string_
+- `?string` or `Ctrl-s`: Search history forward for a command matching _string_
+
+## Scripting
 
 - Use the `#!/usr/bin/env bash` hashbang as the first line of the script
 - Use `chmod +x` to make a script executable
