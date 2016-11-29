@@ -24,6 +24,24 @@ Ideas tested in `GNU bash 3.2.57`.
 - `/string` or `Ctrl-r`: Search history backward for a command matching _string_
 - `?string` or `Ctrl-s`: Search history forward for a command matching _string_
 
+## Shortcuts
+
+- `Tab`: Auto-complete file and folder names
+- `Ctrl-a`: Move to the beginning of the line
+- `Ctrl-e`: Move to the end of the line
+- `Alt-f` or `Alt-right arrow`: Move cursor forward one word
+- `Alt-b` or `Alt-left arrow`: Move cursor backward one word
+- `Up and down arrows`: Move through the last used commands
+- `Ctrl-u`: Clear the line before the cursor
+- `Ctrl-k`: Clear the line after the cursor
+- `Ctrl-l`: Clear the terminal window
+- `Ctrl-y`: Recall line deleted by Ctrl-u
+- `Ctrl-w`: Delete the word before the cursor
+- `Ctrl-c`: Cancel the current command
+- `Ctrl-z`: Put whatever is running into a suspended background process
+- `Ctrl-d`: Exit the current shell
+- `Ctrl-r`: Search through previously commands in history
+ 
 ## Scripting
 
 - Use the `#!/usr/bin/env bash` hashbang as the first line of the script
