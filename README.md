@@ -1,4 +1,4 @@
-# Bash Best Practices
+# Bash 2c
 A bunch of bash tips and tricks topped with a preferred scripting style.
 
 Ideas tested in `GNU bash 3.2.57`.
