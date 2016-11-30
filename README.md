@@ -20,7 +20,7 @@ Ideas tested in `GNU bash 3.2.57`.
 - `:^`: Get the first argument of a command (e.g. ls !cp:^ or ls !!:^)
 - `:$`: Get the last argument of a command (e.g. ls !cp:$ or ls !!:$)
 - `:n`: Get the nth argument of a command (e.g. ls !cp:2 or ls !!:2)
-- `:\*`: Get all arguments of a command (e.g. ls !cp:\* or ls !!:\*)
+- `:*`: Get all arguments of a command (e.g. ls !cp:\* or ls !!:\*)
 
 #### Search and Replace
 - `/string` or `Ctrl-r`: Search history backward for a command matching _string_
