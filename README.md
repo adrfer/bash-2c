@@ -11,10 +11,10 @@ Ideas tested in `GNU bash 3.2.57`.
 
 #### Command Recall
 - `!!`: Recall the last command (e.g. !! or sudo !!)
-- `!n`: Recall the nth command (e.g. !7 or !234)
+- `!n`: Recall the nth command (e.g. !234)
 - `!string`: Recall the most recent command starting with _string_ (e.g. !cd)
 - `!?string`: Recall the most recent command containing _string_ (e.g. !?git)
-- `^string1^string2`: Replace the first occurrence of _string1_ with _string2_ on last command (e.g. cat /etc/hosst, ^hosst^hosts)
+- `^string1^string2`: Replace the first _string1_ with _string2_ on last command (e.g. cat /etc/hosst, ^hosst^hosts)
 
 #### Argument Recall
 - `:^`: Get the first argument of a command (e.g. ls !cp:^ or ls !!:^)
@@ -33,7 +33,7 @@ Ideas tested in `GNU bash 3.2.57`.
 - `Ctrl-e`: Move to the end of the line
 - `Alt-f` or `Alt-right arrow`: Move cursor forward one word
 - `Alt-b` or `Alt-left arrow`: Move cursor backward one word
-- `Up and down arrows`: Move through the last used commands
+- `Up arrow` and `Down arrow`: Move through the last used commands
 - `Ctrl-u`: Clear the line before the cursor
 - `Ctrl-k`: Clear the line after the cursor
 - `Ctrl-l`: Clear the terminal window
