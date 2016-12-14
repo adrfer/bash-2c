@@ -67,3 +67,5 @@ Ideas tested in `GNU bash 3.2.57`.
 
 --
 Hey, looking for some bash badassery? Check out [bash-oh-my](https://github.com/adrfer/bash-oh-my).
+
+Interested in tuning your terminal profile? Take a look at [terminal-oh-my](https://github.com/adrfer/terminal-oh-my).
