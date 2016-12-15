@@ -1,7 +1,7 @@
 # Bash 2c
 A bunch of bash tips and tricks topped with a preferred scripting style.
 
-Ideas tested in `GNU bash 3.2.57`.
+Ideas tested on `GNU bash 3.2.57`.
 
 **Note**: Remember that `man bash` is always at your fingertips.
 
