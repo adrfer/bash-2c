@@ -3,10 +3,7 @@ A bunch of bash tips and tricks topped with a preferred scripting style.
 
 Ideas tested on `GNU bash 3.2.57`.
 
-**Note**: Remember that `man bash` is always at your fingertips.
-
 --
-
 ## History
 
 #### Command Recall
@@ -64,6 +61,9 @@ Ideas tested on `GNU bash 3.2.57`.
 - Skip test for output `[[ ... ]]` in if-expressions if test for exit code is required
 - Prior to iterating over a sequence, set the `IFS=$'\n\t'`, and `unset IFS` afterwards
 - Avoid [obsolete and deprecated syntax](http://wiki.bash-hackers.org/scripting/obsolete)
+
+--
+**Note**: Remember that `man bash` is always at your fingertips.
 
 --
 Hey, looking for some bash badassery? Check out [bash-oh-my](https://github.com/adrfer/bash-oh-my).
