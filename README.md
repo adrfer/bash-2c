@@ -3,7 +3,6 @@ A bunch of bash tips and tricks topped with a preferred scripting style.
 
 Ideas tested against `GNU bash 3.2.57`.
 
---
 ## History
 
 #### Command Recall
@@ -11,7 +10,7 @@ Ideas tested against `GNU bash 3.2.57`.
 - `!n`: Recall the nth command (e.g. !234)
 - `!string`: Recall the most recent command starting with _string_ (e.g. !cd)
 - `!?string`: Recall the most recent command containing _string_ (e.g. !?git)
-- `^string1^string2`: Replace the first _string1_ with _string2_ on last command (e.g. cat /etc/hosst, ^hosst^hosts)
+- `^string1^string2`: Replace _string1_ with _string2_ on last command (e.g. cat /etc/hosst, ^hosst^hosts)
 
 #### Argument Recall
 - `:^`: Get the first argument of a command (e.g. ls !cp:^ or ls !!:^)
@@ -30,7 +29,7 @@ Ideas tested against `GNU bash 3.2.57`.
 - `Ctrl-e`: Move to the end of the line
 - `Alt-f` or `Alt-right arrow`: Move cursor forward one word
 - `Alt-b` or `Alt-left arrow`: Move cursor backward one word
-- `Up arrow` and `Down arrow`: Move through the last used commands
+- `Up arrow` and `Down arrow`: Move through recent commands
 - `Ctrl-u`: Clear the line before the cursor
 - `Ctrl-k`: Clear the line after the cursor
 - `Ctrl-l`: Clear the terminal window
@@ -38,23 +37,22 @@ Ideas tested against `GNU bash 3.2.57`.
 - `Ctrl-w`: Delete the word before the cursor
 - `Ctrl-c`: Cancel the current command
 - `Ctrl-z`: Put whatever is running into a suspended background process
-- `Ctrl-d`: Exit the current shell
 - `Ctrl-r`: Search through previously commands in history
+- `Ctrl-d`: Exit the current shell
  
 ## Scripting
 
 - Use the `#!/usr/bin/env bash` hashbang as the first line of the script
 - Use `chmod +x` to make a script executable
 - Use `.sh` or `.bash` extensions only if the file is meant to be included/sourced
-- Check for the number of arguments `${#}` provided to the script
+- Use `${#}` tocCheck for the number of arguments provided to the script
 - Check if a file and/or a directory exists before accessing it
 - Provide a usage description in case users need help or misuse the script
 - Wrap variables and parameter expansions in curly braces `{` and `}`
 - Use `"double quotes"` for arguments that contain expansions such as `"${variable}"` or `"$(command)"`
 - Use `'single quotes'` for everything else and when to make sure that everything in quotes remains literal
 - Use [builtin parameter expansions](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) rather than external functions
-- Use lowercase for variable names unless exported to the environment
-- Use uppercase for environment variables
+- Use lowercase for regular variable names, all uppercase are for environment variables only
 - Use `mktemp` to create temporary files and always cleanup after with a `trap`
 - Use `\command` to bypass an alias attributed to `command`, e.g. use `\ls` for the detault `ls`
 - Use `>/dev/null 2>&1` to mute command outputs and tell users what went wrong in a more friendly way
