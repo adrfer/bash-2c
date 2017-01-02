@@ -45,7 +45,7 @@ Ideas tested against `GNU bash 3.2.57`.
 - Use the `#!/usr/bin/env bash` hashbang as the first line of the script
 - Use `chmod +x` to make a script executable
 - Use `.sh` or `.bash` extensions only if the file is meant to be included/sourced
-- Use `${#}` tocCheck for the number of arguments provided to the script
+- Use `"${#}"` to check for the number of arguments provided to the script
 - Check if a file and/or a directory exists before accessing it
 - Provide a usage description in case users need help or misuse the script
 - Wrap variables and parameter expansions in curly braces `{` and `}`
