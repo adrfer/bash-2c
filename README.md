@@ -30,9 +30,9 @@ Ideas tested against `GNU bash 3.2.57`.
 - `Alt-f` or `Alt-right arrow`: Move cursor forward one word
 - `Alt-b` or `Alt-left arrow`: Move cursor backward one word
 - `Up arrow` and `Down arrow`: Move through recent commands
+- `Ctrl-l`: Clear the terminal window
 - `Ctrl-u`: Clear the line before the cursor
 - `Ctrl-k`: Clear the line after the cursor
-- `Ctrl-l`: Clear the terminal window
 - `Ctrl-y`: Recall line deleted by Ctrl-u
 - `Ctrl-w`: Delete the word before the cursor
 - `Ctrl-c`: Cancel the current command
