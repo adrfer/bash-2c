@@ -59,6 +59,7 @@ Ideas tested against `GNU bash 3.2.57`.
 - Skip test for output `[[ ... ]]` in if-expressions if test for exit code is required
 - Prior to iterating over a sequence, set the `IFS=$'\n\t'`, and `unset IFS` afterwards
 - Avoid [obsolete and deprecated syntax](http://wiki.bash-hackers.org/scripting/obsolete)
+- Use [shellcheck](https://github.com/koalaman/shellcheck) to make your scripts more robust
 
 --
 **Note**: Remember that `man bash` is always at your fingertips.
