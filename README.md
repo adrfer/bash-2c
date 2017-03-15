@@ -54,7 +54,7 @@ Ideas tested against `GNU bash 3.2.57`.
 - Use [builtin parameter expansions](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) rather than external functions
 - Use lowercase for regular variable names, all uppercase are for environment variables only
 - Use `mktemp` to create temporary files and always cleanup after with a `trap`
-- Use `\command` to bypass an alias attributed to `command`, e.g. use `\ls` for the detault `ls`
+- Use `\command` to bypass an alias attributed to `command`, e.g. use `\ls` for the default `ls`
 - Use `>/dev/null 2>&1` to mute command outputs and tell users what went wrong in a more friendly way
 - Skip test for output `[[ ... ]]` in if-expressions if test for exit code is required
 - Prior to iterating over a sequence, set the `IFS=$'\n\t'`, and `unset IFS` afterwards
