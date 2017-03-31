@@ -60,10 +60,10 @@ Ideas tested against `GNU bash 3.2.57`.
 - Prior to iterating over a sequence, set the `IFS=$'\n\t'`, and `unset IFS` afterwards
 - Use [shellcheck](https://github.com/koalaman/shellcheck) to make your scripts more robust
 
---
+##
 **Note**: Remember that `man bash` is always at your fingertips.
 
---
+##
 Hey, looking for some bash badassery? Check out [bash-oh-my](https://github.com/adrfer/bash-oh-my).
 
 Interested in tuning your terminal profile? Take a look at [terminal-oh-my](https://github.com/adrfer/terminal-oh-my).
